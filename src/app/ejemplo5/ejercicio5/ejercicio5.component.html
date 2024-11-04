@@ -1,0 +1,13 @@
+<p>ejercicio5 works!</p>
+
+<br>
+<input type="text"  #newDay>
+<br>
+<br>
+<button (click)="dia = newDay.value"> Mostrar dia</button>
+
+<div [ngSwitch]="dia">
+      <span *ngSwitchCase="'1'">Lunes</span>
+      <span  *ngSwitchCase="'2'">Martes</span>
+      <span  *ngSwitchDefault>valor no  valido</span>
+</div>

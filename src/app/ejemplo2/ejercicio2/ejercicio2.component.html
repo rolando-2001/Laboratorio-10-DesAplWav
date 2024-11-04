@@ -1,0 +1,32 @@
+<p>ejercicio2 </p>
+
+
+
+<ul *ngFor="let  cargo of cargos">
+    <li [ngClass]="['marco texto']">{{cargo}}</li>
+</ul>
+
+<hr>
+
+<ul *ngFor="let  cargo of cargos">
+      <li [ngClass]="['marco','texto']">{{cargo}}</li>
+</ul>
+
+<hr>
+
+
+<ul *ngFor="let  cargo of cargos">
+    <li [ngClass]="{'marco':true}">{{cargo}}</li>
+</ul>
+
+<hr>
+
+<ul *ngFor="let  cargo of cargos">
+    <li [ngClass]="{'marco':cargo ==='Diseñador'}">{{cargo}}</li>
+</ul>
+
+<hr>
+<ul *ngFor="let  cargo of cargos">
+    <li [ngStyle]="{color:'red'}">{{cargo}}</li>
+</ul>
+
